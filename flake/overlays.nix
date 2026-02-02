@@ -29,6 +29,7 @@
             wayland,
             wl-clipboard,
 
+            gdtoolkit_4,
             nixfmt,
             stylua,
             taplo,
@@ -56,7 +57,7 @@
                     // lib.optionalAttrs (lib.meta.availableOn stdenv.hostPlatform wayland) { inherit wl-clipboard; };
 
                     formatters = {
-                      gdscript = pkgs.gdtoolkit_4;
+                      gdscript = gdtoolkit_4;
                       lua = stylua;
                       nix = nixfmt;
                       toml = taplo;
