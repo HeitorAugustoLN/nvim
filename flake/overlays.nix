@@ -112,7 +112,7 @@
                   in
                   {
                     dev.config = {
-                      impure = "~/nvim-config/nvim";
+                      impure = "~/nvim/nvim";
 
                       pure = lib.fileset.toSource {
                         root = ../nvim;
