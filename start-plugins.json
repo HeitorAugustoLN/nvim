@@ -1,0 +1,34 @@
+{
+  "pins": {
+    "lz.n": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "lumen-oss",
+        "repo": "lz.n"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v2.12.2",
+      "revision": "74194977d829b0d2de9a1514060114b568f6fdba",
+      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v2.12.2",
+      "hash": "sha256-YP8jlE71i/MuF11jsJUNIgojfKpekoSmMlWkKZj+GjQ="
+    },
+    "nvim-lspconfig": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "neovim",
+        "repo": "nvim-lspconfig"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3.tar.gz",
+      "hash": "sha256-vFbimjYoXkjvzq/QyzwOnIs0Q9KeXOwLiy7InRZdrSw="
+    }
+  },
+  "version": 7
+}
