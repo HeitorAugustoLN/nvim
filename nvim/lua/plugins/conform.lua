@@ -3,7 +3,12 @@ return {
   after = function()
     require("conform").setup({
       format_on_save = { timeout_ms = 500 },
-      formatters_by_ft = { lua = { "stylua" }, nix = { "nixfmt" }, toml = { "taplo" } },
+      formatters_by_ft = {
+        gdscript = { "gdformat" },
+        lua = { "stylua" },
+        nix = { "nixfmt" },
+        toml = { "taplo" },
+      },
     })
   end,
   cmd = "ConformInfo",
