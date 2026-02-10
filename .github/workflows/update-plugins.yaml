@@ -33,6 +33,8 @@ jobs:
           git config user.email "246902415+heitor-bot[bot]@users.noreply.github.com"
       - name: Update plugins
         id: update
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           echo "Updating start plugins..."
           start_output=$(nix develop --quiet --command just update-plugins start --full 2>&1)
