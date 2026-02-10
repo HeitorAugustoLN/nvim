@@ -37,9 +37,9 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           echo "Updating start plugins..."
-          start_output=$(nix develop --quiet --command just update-plugins start --full 2>&1)
+          start_output=$(nix run --quiet nixpkgs#npins -- --lock-file start-plugins.json update --full 2>&1)
           echo "Updating opt plugins..."
-          opt_output=$(nix develop --quiet --command just update-plugins opt --full 2>&1)
+          opt_output=$(nix run --quiet nixpkgs#npins -- --lock-file opt-plugins.json update --full 2>&1)
 
           combined_output="Start plugins:\n$start_output\n\nOptional plugins:\n$opt_output"
 
