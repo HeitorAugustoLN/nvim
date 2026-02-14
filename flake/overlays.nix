@@ -1,5 +1,4 @@
 {
-  config,
   inputs,
   lib,
   self,
@@ -108,84 +107,80 @@
 
                 initLua = builtins.readFile initLua;
 
-                plugins =
-                  let
-                    npinsToPlugins = input: config.nexus.lib.npinsToPlugins { inherit input pkgs; };
-                  in
-                  {
-                    dev.config = {
-                      impure = "~/nvim/nvim";
+                plugins = {
+                  dev.config = {
+                    impure = "~/nvim/nvim";
 
-                      pure = lib.fileset.toSource {
-                        root = ../nvim;
+                    pure = lib.fileset.toSource {
+                      root = ../nvim;
 
-                        fileset = lib.fileset.unions [
-                          ../nvim/after
-                          ../nvim/lua
-                          initLua
-                        ];
-                      };
-                    };
-
-                    optAttrs = npinsToPlugins ../opt-plugins.json // {
-                      "blink.cmp" = vimPlugins.blink-cmp;
-                    };
-
-                    start =
-                      let
-                        git = [
-                          "git_config"
-                          "git_rebase"
-                          "gitattributes"
-                          "gitcommit"
-                          "gitignore"
-                        ];
-
-                        godot = [
-                          "gdscript"
-                          "gdshader"
-                          "godot_resource"
-                        ];
-
-                        lua = [
-                          "lua"
-                          "luadoc"
-                          "luap"
-                        ];
-
-                        vim = [
-                          "vim"
-                          "vimdoc"
-                        ];
-                      in
-                      [
-                        "bash"
-                        "comment"
-                        "diff"
-                        git
-                        godot
-                        "json"
-                        "just"
-                        lua
-                        "markdown"
-                        "nix"
-                        "query"
-                        "regex"
-                        "toml"
-                        vim
-                        "yaml"
-                        "zsh"
-                      ]
-                      |> lib.flatten
-                      |> builtins.concatMap (language: [
-                        vimPlugins.nvim-treesitter.parsers.${language}
-                        vimPlugins.nvim-treesitter.queries.${language}
-                      ]);
-
-                    startAttrs = npinsToPlugins ../start-plugins.json // {
-                      inherit (vimPlugins) nvim-treesitter;
+                      fileset = lib.fileset.unions [
+                        ../nvim/after
+                        ../nvim/lua
+                        initLua
+                      ];
                     };
                   };
+
+                  optAttrs = inputs.mnw.lib.npinsToPluginsAttrs pkgs ../opt-plugins.json // {
+                    "blink.cmp" = vimPlugins.blink-cmp;
+                  };
+
+                  start =
+                    let
+                      git = [
+                        "git_config"
+                        "git_rebase"
+                        "gitattributes"
+                        "gitcommit"
+                        "gitignore"
+                      ];
+
+                      godot = [
+                        "gdscript"
+                        "gdshader"
+                        "godot_resource"
+                      ];
+
+                      lua = [
+                        "lua"
+                        "luadoc"
+                        "luap"
+                      ];
+
+                      vim = [
+                        "vim"
+                        "vimdoc"
+                      ];
+                    in
+                    [
+                      "bash"
+                      "comment"
+                      "diff"
+                      git
+                      godot
+                      "json"
+                      "just"
+                      lua
+                      "markdown"
+                      "nix"
+                      "query"
+                      "regex"
+                      "toml"
+                      vim
+                      "yaml"
+                      "zsh"
+                    ]
+                    |> lib.flatten
+                    |> builtins.concatMap (language: [
+                      vimPlugins.nvim-treesitter.parsers.${language}
+                      vimPlugins.nvim-treesitter.queries.${language}
+                    ]);
+
+                  startAttrs = inputs.mnw.lib.npinsToPluginsAttrs pkgs ../start-plugins.json // {
+                    inherit (vimPlugins) nvim-treesitter;
+                  };
+                };
 
                 providers = {
                   nodeJs.enable = false;
