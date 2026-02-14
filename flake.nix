@@ -12,12 +12,6 @@
 
   inputs = {
     # keep-sorted start block=yes newline_separated=yes
-    flake-compat = {
-      type = "github";
-      owner = "NixOS";
-      repo = "flake-compat";
-    };
-
     flake-parts = {
       type = "github";
       owner = "hercules-ci";
