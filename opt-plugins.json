@@ -9,9 +9,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "12c004cde3f36cb1d57242f1e6aac46b09a0e5b4",
-      "url": "https://github.com/catppuccin/nvim/archive/12c004cde3f36cb1d57242f1e6aac46b09a0e5b4.tar.gz",
-      "hash": "sha256-LdTFG+XR49yIvXM7Lqod+ROnXGwrga5YAceZnZj+GxY="
+      "revision": "384f304c8b04664c9e0091fbfb3923c5f97c1bcf",
+      "url": "https://github.com/catppuccin/nvim/archive/384f304c8b04664c9e0091fbfb3923c5f97c1bcf.tar.gz",
+      "hash": "sha256-L6W+aW3wuAYg9tyKDqxL4iykqOaFT6Bmx3nZMux409k="
     },
     "conform.nvim": {
       "type": "Git",
@@ -22,9 +22,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "40dcec5555f960b0a04340d76eabdf4efe78599d",
-      "url": "https://github.com/stevearc/conform.nvim/archive/40dcec5555f960b0a04340d76eabdf4efe78599d.tar.gz",
-      "hash": "sha256-mclRSYexUfSr6OU4ls5swUJln9V1uU4nvUGVp8+Gejw="
+      "revision": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
+      "url": "https://github.com/stevearc/conform.nvim/archive/086a40dc7ed8242c03be9f47fbcee68699cc2395.tar.gz",
+      "hash": "sha256-aJIUkAcFdaOWBQ3HNLLvhqALzch0BqPUZPtb2cmIeCE="
     },
     "fzf-lua": {
       "type": "Git",
@@ -35,9 +35,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d9508cc1d05ffcdc91a32dfd38fc1013a56b20da",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/d9508cc1d05ffcdc91a32dfd38fc1013a56b20da.tar.gz",
-      "hash": "sha256-b28g7Ca5qV0gJefVthwBm3mRgp0+2Wr3kY7trlH1BhI="
+      "revision": "bf59dcee2a8d894724b060401d2abf3d71d4bd47",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/bf59dcee2a8d894724b060401d2abf3d71d4bd47.tar.gz",
+      "hash": "sha256-EjCjBTqpZz74oOJ2+8+hEbTUfTRFiSfVMs1owaryeSY="
     },
     "mini.nvim": {
       "type": "Git",
@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "cad365c212fb1e332cb93fa8f72697125799d00a",
-      "url": "https://github.com/nvim-mini/mini.nvim/archive/cad365c212fb1e332cb93fa8f72697125799d00a.tar.gz",
-      "hash": "sha256-mWakp4Xjxp2PNuRHyaNSHAIbUuNb4IIFvqZRsSTc32U="
+      "revision": "9990c41f10f54f29a888d13024c9f765037bde23",
+      "url": "https://github.com/nvim-mini/mini.nvim/archive/9990c41f10f54f29a888d13024c9f765037bde23.tar.gz",
+      "hash": "sha256-Idg/aP7kXAjXra51I56+DtldHII4NmKzGehIkk0S19c="
     },
     "oil.nvim": {
       "type": "GitRelease",
