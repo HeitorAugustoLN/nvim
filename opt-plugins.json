@@ -35,9 +35,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "1e866cce085cc6df3d3e4fb59f00105fa84cef6c",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/1e866cce085cc6df3d3e4fb59f00105fa84cef6c.tar.gz",
-      "hash": "sha256-gKjlMTMpelpyRflaDmjiJoxEYMsw1FQlBaZX3/R/WXI="
+      "revision": "834246377489f9a1e6d4df570a7874a48c644b56",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/834246377489f9a1e6d4df570a7874a48c644b56.tar.gz",
+      "hash": "sha256-ZCKyz6R175Ll18OPoIy5VLuWN2YXPsVlgMPLytfjJ1Y="
     },
     "mini.nvim": {
       "type": "Git",
@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "c67822c53e8e282fe863343e88aa0a8ca3534059",
-      "url": "https://github.com/nvim-mini/mini.nvim/archive/c67822c53e8e282fe863343e88aa0a8ca3534059.tar.gz",
-      "hash": "sha256-M/oekdxoGF/8IrI/3sdBVn7v7M7G7QuwT32na9PfTfI="
+      "revision": "418ef4930ddabe80f449c6f1323f8b6abb172d1c",
+      "url": "https://github.com/nvim-mini/mini.nvim/archive/418ef4930ddabe80f449c6f1323f8b6abb172d1c.tar.gz",
+      "hash": "sha256-bHEFu4XZI9QHP41h11sSNgRG43PDSkdgTyzmJt64gLk="
     },
     "oil.nvim": {
       "type": "GitRelease",
