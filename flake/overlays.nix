@@ -122,9 +122,7 @@
                     };
                   };
 
-                  optAttrs = inputs.mnw.lib.npinsToPluginsAttrs pkgs ../opt-plugins.json // {
-                    "blink.cmp" = vimPlugins.blink-cmp;
-                  };
+                  optAttrs = inputs.mnw.lib.npinsToPluginsAttrs pkgs ../opt-plugins.json;
 
                   start =
                     let
