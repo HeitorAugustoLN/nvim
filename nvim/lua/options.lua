@@ -15,12 +15,14 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.o.mouse = "a"
 vim.o.number = true
 vim.o.pumblend = 10
+vim.o.pumborder = "rounded"
 vim.o.pumheight = 10
 vim.o.relativenumber = true
 vim.o.ruler = false
 vim.o.scrolloff = 4
 vim.o.shiftround = true
 vim.o.shiftwidth = 2
+vim.opt.shortmess:append("I") -- Disable neovim intro
 vim.o.showmode = false
 vim.o.sidescrolloff = 8
 vim.o.signcolumn = "yes"
@@ -42,7 +44,3 @@ vim.o.winborder = "rounded"
 -- We have to set these both manually because of the way mnw handles PATH
 vim.o.grepformat = "%f:%l:%c:%m"
 vim.o.grepprg = "rg --vimgrep"
-
-if vim.fn.has("nvim-0.12") == 1 then
-  vim.o.pumborder = "rounded"
-end
