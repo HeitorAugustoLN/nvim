@@ -1,5 +1,5 @@
 {
-  description = "HeitorAugustoLN's personal Neovim configuration made with Nixvim";
+  description = "HeitorAugustoLN's personal Neovim configuration";
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./flake);
 
@@ -21,7 +21,7 @@
 
     import-tree = {
       type = "github";
-      owner = "vic";
+      owner = "denful";
       repo = "import-tree";
     };
 
@@ -52,7 +52,7 @@
     systems = {
       type = "github";
       owner = "nix-systems";
-      repo = "default";
+      repo = "triplet";
     };
 
     treefmt-nix = {
